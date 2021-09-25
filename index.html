@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>登录系统</title>
+    <meta name="description" content="后台管理框架">
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link href="/css/login.min.css" rel="stylesheet"/>
+    <link href="/ruoyi/css/ry-ui.css?v=4.2.0" rel="stylesheet"/>
+    <!-- 360浏览器急速模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style type="text/css">label.error { position:inherit;  }</style>
+    <script>
+        if(window.top!==window.self){alert('未登录或登录超时。请重新登录');window.top.location=window.location};
+    </script>
+</head>
+<body class="signin">
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="signin-info" style="text-align: center">
+                   <div class="logopanel m-b">
+                        <h1><img alt="[  ]" width="85%"  src="/img/school.png"></h1>
+                    </div>
+                    <div class="m-b"></div>
+                    <h1><strong>北辛中学新生报名管理系统</strong></h1>
+                    <h1><strong>在爱山东·枣庄录取的请不要到现场审报</strong></h1>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <form id="signupForm" autocomplete="off">
+                    <h4 class="no-margins">登录：</h4>
+                    <input type="text"     name="username" class="form-control uname"     placeholder="身份证号"     />
+                    <input type="password" name="password" class="form-control pword"     placeholder="密码"    />
+					
+                    <div class="checkbox-custom m-t">
+				        <input type="checkbox" id="rememberme" name="rememberme"> <label for="rememberme">记住我</label>
+				    </div>
+                    <button class="btn btn-success btn-block" id="btnSubmit" data-loading="正在验证登录，请稍后...">登录</button>
+                </form>
+            </div>
+        </div>
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy; 2020 All Rights Reserved. 墨班科技 <br>
+            </div>
+            <div class="pull-right">
+                <strong>还没有账号？ <a href="/register">新生注册&raquo;</a></strong>
+            </div>
+        </div>
+    </div>
+<script> var ctx = "\/"; var captchaType = "math"; </script>
+<!-- 全局js -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- 验证插件 -->
+<script src="/ajax/libs/validate/jquery.validate.min.js"></script>
+<script src="/ajax/libs/validate/messages_zh.min.js"></script>
+<script src="/ajax/libs/layer/layer.min.js"></script>
+<script src="/ajax/libs/blockUI/jquery.blockUI.js"></script>
+<script src="/ruoyi/js/ry-ui.js?v=4.2.0"></script>
+<script src="/ruoyi/login.js"></script>
+</body>
+</html>
